@@ -59,7 +59,7 @@ def ask(req: AskRequest):
 
     try:
         response = client.responses.create(
-            model="gpt-5.6",
+            model="gpt-5.6-luna",
             tools=[mcp_tool],
             input=question
         )
